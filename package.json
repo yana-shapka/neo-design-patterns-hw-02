@@ -1,0 +1,27 @@
+{
+  "name": "neo-design-patterns-hw-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx ts-node src/main.ts",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yana-shapka/neo-design-patterns-hw-02.git"
+  },
+  "keywords": [],
+  "author": "Yana Shapka <yana.shapka.test@gmail.com>",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yana-shapka/neo-design-patterns-hw-02/issues"
+  },
+  "homepage": "https://github.com/yana-shapka/neo-design-patterns-hw-02#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
