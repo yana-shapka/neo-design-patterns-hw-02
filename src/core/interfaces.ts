@@ -9,9 +9,6 @@ export interface ILogger {
 export interface INotificationService {
   addChannel(channel: INotificationChannel): void;
   notify(recipient: string, message: string): void;
-  sendEmail(user: IUser, message: string): void;
-  sendSMS(user: IUser, message: string): void;
-  sendPush(user: IUser, message: string): void;
 }
 
 export interface IUser {

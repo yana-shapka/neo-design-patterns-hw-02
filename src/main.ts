@@ -19,6 +19,14 @@ notificationService.addChannel(pushChannel);
 
 const user = new User('user@example.com', '+1234567890', 'device-token-123');
 
-notificationService.sendEmail(user, 'Ваш платіж оброблено успішно!');
-notificationService.sendSMS(user, 'Ваш платіж оброблено успішно!');
-notificationService.sendPush(user, 'Ваш платіж оброблено успішно!');
+const emailService = new NotificationService();
+emailService.addChannel(emailChannel);
+emailService.notify(user.email, 'Ваш платіж оброблено успішно!');
+
+const smsService = new NotificationService();
+smsService.addChannel(smsChannel);
+smsService.notify(user.phone, 'Ваш платіж оброблено успішно!');
+
+const pushService = new NotificationService();
+pushService.addChannel(pushChannel);
+pushService.notify(user.deviceToken, 'Ваш платіж оброблено успішно!');
